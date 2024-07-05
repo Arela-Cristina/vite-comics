@@ -14,6 +14,6 @@ export default {
 <!-- Codice Css -->
 <style scoped>
 h1 {
-    color:white;
+    color:rgb(187, 36, 119);
 }
 </style>
