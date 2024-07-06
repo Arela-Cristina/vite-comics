@@ -1,19 +1,19 @@
 <!-- codice Javascript -->
 <script>
 export default {
-    name: "AppFooter",
+    name: "FooterLinks",
 }
 
 </script>
 
 <!-- Codice HTML -->
 <template>
-    <h1>Footer</h1>
+    <div>Footer Links</div>
 </template>
 
 <!-- Codice Css -->
 <style scoped>
-h1 {
-    color:yellowgreen;
+div {
+    font-size: 30px;
 }
 </style>
