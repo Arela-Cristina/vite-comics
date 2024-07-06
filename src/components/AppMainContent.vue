@@ -8,12 +8,22 @@ export default {
 
 <!-- Codice HTML -->
 <template>
-    <h1>Contenuto Principale</h1>
+    <div>
+        <span> --› Contenuto Principale ‹-- </span>
+    </div>
 </template>
 
 <!-- Codice Css -->
 <style scoped>
-h1 {
-    color:rgb(187, 36, 119);
+div {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    background-color: black;
+}
+
+span {
+    /* debug */
+    color: white;
+    font-size: 30px;
 }
 </style>
