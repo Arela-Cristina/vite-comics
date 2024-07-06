@@ -17,10 +17,11 @@ export default {
    <AppHeader />
    <AppMainContent/>
    <AppFooter/>
+    
    
 </template>
-
-<style scoped>
+<!-- hemos quitado scope para importar todos nuestros files -->
+<style  lang="scss">
 .logo {
   height: 6em;
   padding: 1.5em;
