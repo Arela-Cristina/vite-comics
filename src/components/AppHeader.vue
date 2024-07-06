@@ -88,7 +88,7 @@ div {
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* debug */
-    background-color: pink;
+    background-color: white;
 }
 
 img {
