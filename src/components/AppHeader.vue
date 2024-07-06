@@ -92,7 +92,7 @@ div {
 }
 
 img {
-    width: 100px;
+    width: 50px;
 }
 
 ul {
