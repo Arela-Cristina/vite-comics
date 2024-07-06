@@ -66,9 +66,10 @@ export default {
 <!-- Codice HTML -->
 <template>
     <!-- logo -->
-    <img src="/public/img/dc-logo.png">
-    <!-- menu header -->
     <div>
+        <img src="/public/img/dc-logo.png">
+
+        <!-- menu header -->
         <ul>
             <li v-for="(link, index) in links" :key="index"><a href="#">{{ link.text }}</a></li>
         </ul>
@@ -77,7 +78,30 @@ export default {
 
 <!-- Codice Css -->
 <style scoped>
+div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* debug */
+    background-color: pink;
+}
+
 img {
-    width: 15%;
+    width: 100px;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 </style>
