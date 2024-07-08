@@ -9,16 +9,16 @@ export default {
 <!-- Codice HTML -->
 <template>
     <div>
-        <span> --› Contenuto Principale ‹-- </span>
     </div>
 </template>
 
 <!-- Codice Css -->
 <style scoped>
 div {
-    padding-right: 10rem;
-    padding-left: 10rem;
-    background-color: black;
+    background-image: url(../../public/img/jumbotron.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 18rem;
 }
 
 span {
