@@ -2,6 +2,37 @@
 <script>
 export default {
     name: "FooterSocial",
+    data() {
+        return {
+            arraySocial: [
+                {
+                    logo: "./public/img/footer-facebook.png",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    logo: "./public/img/footer-twitter.png",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    logo: "./public/img/footer-youtube.png",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    logo: "./public/img/footer-pinterest.png",
+                    url: "#",
+                    current: false,
+                },
+                {
+                    logo: "./public/img/footer-periscope.png",
+                    url: "#",
+                    current: false,
+                }
+            ]
+        }
+    }
 }
 
 </script>
@@ -10,9 +41,12 @@ export default {
 <template>
     <section>
         <span id="signUp">Sign Up Now</span>
-        <div>
+        <div class="box-social">
+
             <span>Follow Us</span>
-            <img src="../../../public/img/footer-pinterest.png" alt="link pinterest">
+            <div v-for="(social, index) in arraySocial" :key="index">
+                <img :src="social.logo" alt="">
+            </div>
         </div>
     </section>
 </template>
@@ -36,14 +70,14 @@ section {
     font-weight: bolder;
 }
 
-div {
+div.box-social {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 span {
-    color:#0282f9;
+    color: #0282f9;
     font-weight: bolder;
 }
 

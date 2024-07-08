@@ -1,12 +1,10 @@
 <!-- codice Javascript -->
 <script>
-import CardFumeti from './CardFumeti.vue';
 import CardFumetti from './CardFumetti.vue';
 
 export default {
     name: "AppMainContent",
     components: {
-        CardFumeti,
         CardFumetti
     },
     data() {

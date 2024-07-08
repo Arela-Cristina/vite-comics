@@ -1,7 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppMainContent from './components/AppMainContent.vue'
-import CardFumeti from './components/CardFumeti.vue'
 import FooterStore from './components/Footer/FooterStore.vue'
 import FooterLinks from './components/Footer/FooterLinks.vue'
 import FooterSocial from './components/Footer/FooterSocial.vue'
@@ -10,7 +9,7 @@ export default {
   components: {
     AppHeader,
     AppMainContent,
-    CardFumeti,
+    // CardFumeti,
     FooterStore,
     FooterLinks,
     FooterSocial
