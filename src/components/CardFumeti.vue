@@ -11,31 +11,18 @@ export default {
 
 <!-- Codice HTML -->
 <template>
-    <section>
-        <div class="box-fumetto">
-            <img :src="details.thumb" alt="comic">
-            <div class="caption">{{details.type}}</div>
-        </div>
-    </section>
+    <!-- <pre>
+        {{ details }}
+    </pre>
+    test -->
+
 </template>
 
 <!-- Codice Css -->
 <style scoped>
-section {
-    background-color: rgb(24, 24, 24);
-    width: 100%;
-    min-height: 10rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
 
-}
 
-.box-fumetto {
+.box-fumeto {
     width: calc(100% / 6 - 1rem);
 }
 

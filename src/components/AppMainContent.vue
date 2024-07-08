@@ -1,16 +1,19 @@
 <!-- codice Javascript -->
 <script>
-import CardFumeti from './CardFumeti.vue'
+import CardFumeti from './CardFumeti.vue';
+import CardFumetti from './CardFumetti.vue';
+
 export default {
     name: "AppMainContent",
     components: {
         CardFumeti,
+        CardFumetti
     },
     data() {
         return {
             arrayComics: [
                 {
-                    "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
+                    "thumb": "https://m.media-amazon.com/images/I/61KFLylOgPL.jpg",
                     "price": "$19.99",
                     "series": "Action Comics",
                     "type": "comic book",
@@ -91,10 +94,13 @@ export default {
 <!-- Codice HTML -->
 <template>
     <section>
+        <div class="currentSeries">CURRENT SERIES</div>
         <div id="jumbutron"></div>
-        <div>
-            <CardFumeti v-for="(CardFumeto, index) in arrayComics" :key="index" :details="CardFumeto"/>
+        <div class="container-fumeti">
+            <!-- <CardFumeti v-for="(CardFumeto, index) in arrayComics" :key="index" :details="CardFumeto"/> -->
+            <CardFumetti v-for="(comic, index) in arrayComics" :key="index" :details="comic" />
         </div>
+        <div class="loadMore">LOAD MORE</div>
     </section>
 </template>
 
@@ -107,11 +113,46 @@ export default {
     height: 18rem;
 }
 
+section {
+    background-color: rgb(24, 24, 24);
+    padding-bottom: 1rem;
+    position: relative;
+}
 
+.container-fumeti {
+    width: 100%;
+    min-height: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-span {
-    /* debug */
+}
+
+.currentSeries {
     color: white;
-    font-size: 30px;
+    font-size: 17px;
+    background-color: #0282f9;
+    min-width: 15%;
+    margin: 0 auto;
+    padding: 10px 21px;
+    position: absolute;
+    font-weight: 900;
+    top: 17rem;
+    left: 10rem;
+    text-align: center;
+}
+
+.loadMore {
+    color: white;
+    font-size: 12px;
+    background-color: #0282f9;
+    width: 10%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    text-align: center;
 }
 </style>
