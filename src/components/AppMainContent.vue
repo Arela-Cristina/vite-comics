@@ -91,14 +91,16 @@ export default {
 <!-- Codice HTML -->
 <template>
     <section>
-        <div></div>
-        <CardFumeti v-for="CardFumeto in arrayComics"/>
+        <div id="jumbutron"></div>
+        <div>
+            <CardFumeti v-for="CardFumeto in arrayComics" />
+        </div>
     </section>
 </template>
 
 <!-- Codice Css -->
 <style scoped>
-div {
+#jumbutron {
     background-image: url(../../public/img/jumbotron.jpg);
     background-size: cover;
     width: 100%;
