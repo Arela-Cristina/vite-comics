@@ -54,6 +54,7 @@ section {
     width: 100%;
     height: 20rem;
     background-image: url(../../../public/img/footer-bg.jpg);
+    overflow: hidden;
 }
 
 .mainBox {
