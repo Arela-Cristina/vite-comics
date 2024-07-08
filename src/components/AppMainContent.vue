@@ -93,7 +93,7 @@ export default {
     <section>
         <div id="jumbutron"></div>
         <div>
-            <CardFumeti v-for="CardFumeto in arrayComics" />
+            <CardFumeti v-for="(CardFumeto, index) in arrayComics" :key="index" :details="CardFumeto"/>
         </div>
     </section>
 </template>

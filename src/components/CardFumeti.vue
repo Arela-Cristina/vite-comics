@@ -2,6 +2,9 @@
 <script>
 export default {
     name: "CardFumeti",
+    props: {
+        details: Object,
+    }
 }
 
 </script>
@@ -10,10 +13,9 @@ export default {
 <template>
     <section>
         <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
+            <img :src="details.thumb" alt="comic">
+            <div class="caption">{{details.type}}</div>
         </div>
-
     </section>
 </template>
 
