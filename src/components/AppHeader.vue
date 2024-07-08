@@ -5,58 +5,57 @@ export default {
     data() {
         return {
             links: [
-                {
+                { // 0
                     text: "Characters",
                     url: "#",
-                    current: false,
                 },
-                {
+                { // 1
                     text: "Comics",
                     url: "#",
-                    current: false,
                 },
-                {
+                { // ...
                     text: "Movies",
                     url: "#",
-                    current: false,
                 },
                 {
                     text: "TV",
                     url: "#",
-                    current: false,
                 },
                 {
                     text: "Games",
                     url: "#",
-                    current: false,
                 },
                 {
                     text: "Collectibles",
                     url: "#",
-                    current: false,
                 },
                 {
                     text: "Videos",
                     url: "#",
-                    current: false,
                 },
                 {
                     text: "Fans",
                     url: "#",
-                    current: false,
                 },
                 {
                     text: "News",
                     url: "#",
-                    current: false,
                 },
                 {
                     text: "Shop",
                     url: "#",
-                    current: false,
                 }
-            ]
+            ],
+            current: undefined
         }
+    },
+    methods:{
+        setCurrent(link){
+            this.current = link;
+        }
+    },
+    mounted() {
+        this.current = this.links[0];
     }
 }
 
@@ -71,7 +70,8 @@ export default {
 
         <!-- menu header -->
         <ul>
-            <li v-for="(link, index) in links" :key="index"><a href="#">{{ link.text }}</a></li>
+            <li v-for="(link, index) in links" :key="index"><a href="#" @click="setCurrent(link)" :class="link == current ? 'active' : ''">{{ link.text }}</a>
+            </li>
         </ul>
     </div>
 </template>
@@ -103,5 +103,17 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.active {
+    border-bottom: solid 4px #2196F3;
+    padding-bottom: 28px;
+    color: #2196F3;
+}
+
+a:hover {
+    border-bottom: solid 4px #2196F3;
+    padding-bottom: 28px;
+    color: #2196F3;
 }
 </style>
