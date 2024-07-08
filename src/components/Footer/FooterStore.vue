@@ -2,6 +2,42 @@
 <script>
 export default {
     name: "FooterStore",
+    data() {
+        return {
+            arrayItem: [
+                {
+                    src: "./public/img/buy-comics-digital-comics.png",
+                    url: "#",
+                    text: "Digital Comics",
+                    current: false,
+                },
+                {
+                    src: "./public/img/buy-comics-merchandise.png",
+                    url: "#",
+                    text: "DC Merchandise",
+                    current: false,
+                },
+                {
+                    src: "./public/img/buy-comics-subscriptions.png",
+                    url: "#",
+                    text: "Subscription",
+                    current: false,
+                },
+                {
+                    src: "./public/img/buy-comics-shop-locator.png",
+                    url: "#",
+                    text: "Comic Shop Locator",
+                    current: false,
+                },
+                {
+                    src: "./public/buy-dc-power-visa.svg",
+                    url: "#",
+                    text: "DC Power Visa",
+                    current: false,
+                }
+            ]
+        }
+    }
 }
 
 </script>
@@ -10,26 +46,9 @@ export default {
 <template>
     <section>
         <!-- contenuto dinamico -->
-        <div>
-            <img src="../../../public/img/buy-comics-digital-comics.png" alt="">
-            <a href="#">Digital Comics</a>
-        </div>
-        <!-- contenuto da cancellare quando si isneria il conetnuto dinamico -->
-        <div>
-            <img src="../../../public/img/buy-comics-digital-comics.png" alt="">
-            <a href="#">Digital Comics</a>
-        </div>
-        <div>
-            <img src="../../../public/img/buy-comics-digital-comics.png" alt="">
-            <a href="#">Digital Comics</a>
-        </div>
-        <div>
-            <img src="../../../public/img/buy-comics-digital-comics.png" alt="">
-            <a href="#">Digital Comics</a>
-        </div>
-        <div>
-            <img src="../../../public/img/buy-comics-digital-comics.png" alt="">
-            <a href="#">Digital Comics</a>
+        <div v-for="(item, index) in arrayItem" :key="index">
+            <img :src="item.src" alt="">
+            <a href="#">{{ item.text }}</a>
         </div>
     </section>
 </template>
@@ -53,6 +72,7 @@ div {
 }
 
 img {
-    width: 2.5rem;
+    width: 2.6rem;
+    height: 3rem;
 }
 </style>

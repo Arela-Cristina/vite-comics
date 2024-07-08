@@ -128,6 +128,7 @@ section {
     padding-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2rem;
 
 }

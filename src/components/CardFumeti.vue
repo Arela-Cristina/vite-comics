@@ -1,4 +1,4 @@
-<!-- codice Javascript -->
+codice Javascript
 <script>
 export default {
     name: "CardFumeti",
