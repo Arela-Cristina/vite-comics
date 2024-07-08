@@ -42,7 +42,7 @@ section {
     padding-left: 11rem;
     padding-right: 11rem;
     width: 100%;
-    height: 8rem;
+    height: 7rem;
     background-color: #0282f9;
 }
 
