@@ -30,7 +30,7 @@ export default {
                     current: false,
                 },
                 {
-                    src: "./public/buy-dc-power-visa.svg",
+                    src: "./public/img/buy-dc-power-visa.svg",
                     url: "#",
                     text: "DC Power Visa",
                     current: false,
