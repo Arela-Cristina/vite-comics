@@ -90,8 +90,10 @@ export default {
 
 <!-- Codice HTML -->
 <template>
-    <div></div>
-    <CardFumeti />
+    <section>
+        <div></div>
+        <CardFumeti v-for="CardFumeto in arrayComics"/>
+    </section>
 </template>
 
 <!-- Codice Css -->
@@ -102,6 +104,8 @@ div {
     width: 100%;
     height: 18rem;
 }
+
+
 
 span {
     /* debug */

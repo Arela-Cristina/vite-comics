@@ -14,50 +14,6 @@ export default {
             <div class="caption">ACTION COMICS</div>
         </div>
 
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
-        <div class="box-fumetto">
-            <img src="https://m.media-amazon.com/images/I/81vWg-nd5PL._AC_UF1000,1000_QL80_.jpg" alt="comic">
-            <div class="caption">ACTION COMICS</div>
-        </div>
     </section>
 </template>
 
@@ -74,6 +30,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+
 }
 
 .box-fumetto {
